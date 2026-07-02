@@ -96,7 +96,7 @@
     </button>
     <div id="cb-panel" class="cb-panel" role="dialog" aria-label="YK AIアシスタント" hidden>
       <div class="cb-header">
-        <img class="cb-avatar" src="${ROOT}images/yuki-idea.png" alt="" width="40" height="40" aria-hidden="true">
+        <img class="cb-avatar" src="${ROOT}images/yuki-idea.png?v=2" alt="" width="40" height="40" aria-hidden="true">
         <div>
           <p class="cb-header-title">YUKI<span class="cb-header-role">YK AIアシスタント</span></p>
           <p class="cb-header-sub"><span class="cb-header-dot" aria-hidden="true"></span>オンライン・すぐに応答します</p>
