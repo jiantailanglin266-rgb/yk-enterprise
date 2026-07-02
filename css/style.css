@@ -286,6 +286,19 @@ a:focus-visible, button:focus-visible {
   font-variant-numeric: tabular-nums;
 }
 
+/* ---- マスコットYUKI(ゆらゆら浮遊) ---- */
+.yuki-bob {
+  animation: yuki-bob 4.5s ease-in-out infinite alternate;
+  filter: drop-shadow(0 12px 24px rgba(139, 92, 246, 0.35));
+  will-change: transform;
+}
+.yuki-bob-2 { animation-delay: -1.5s; }
+.yuki-bob-3 { animation-delay: -3s; }
+@keyframes yuki-bob {
+  0%   { transform: translateY(0) rotate(-1deg); }
+  100% { transform: translateY(-10px) rotate(1.5deg); }
+}
+
 /* ============================================================
    チャットボット(YK AIアシスタント)
    ============================================================ */
@@ -351,15 +364,35 @@ a:focus-visible, button:focus-visible {
   border-bottom: 1px solid var(--c-line);
   background: linear-gradient(120deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.12));
 }
+.cb-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  object-position: top;
+  background: linear-gradient(135deg, #ede9fe, #e0e7ff);
+  border: 2px solid rgba(139, 92, 246, 0.5);
+  flex-shrink: 0;
+}
 .cb-header-dot {
-  width: 0.65rem;
-  height: 0.65rem;
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-right: 0.3rem;
   border-radius: 9999px;
   background: #34d399;
-  box-shadow: 0 0 10px rgba(52, 211, 153, 0.8);
+  box-shadow: 0 0 8px rgba(52, 211, 153, 0.8);
+  vertical-align: middle;
 }
 .cb-header-title { font-weight: 700; font-size: 0.9rem; color: var(--c-text); }
-.cb-header-sub { font-size: 0.7rem; color: var(--c-text-sub); }
+.cb-header-role {
+  margin-left: 0.45rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--c-text-sub);
+  letter-spacing: 0.08em;
+}
+.cb-header-sub { font-size: 0.68rem; color: var(--c-text-sub); }
 .cb-close {
   margin-left: auto;
   width: 2rem;

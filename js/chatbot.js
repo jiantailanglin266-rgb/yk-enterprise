@@ -24,7 +24,7 @@
   const RULES = [
     {
       match: /こんにちは|こんばんは|おはよう|はじめまして|hello|hi/i,
-      reply: () => "こんにちは!YK ENTERPRISEのAIアシスタントです 👋<br>Web制作・AI開発・マーケティング・美容DXについて、なんでもお気軽にご質問ください。"
+      reply: () => "こんにちは!マスコットのYUKI(ユキ)です 👋<br>Web制作・AI開発・マーケティング・美容DXについて、なんでもお気軽にご質問ください。"
     },
     {
       match: /料金|費用|価格|予算|いくら|相場|プラン/,
@@ -96,10 +96,10 @@
     </button>
     <div id="cb-panel" class="cb-panel" role="dialog" aria-label="YK AIアシスタント" hidden>
       <div class="cb-header">
-        <span class="cb-header-dot" aria-hidden="true"></span>
+        <img class="cb-avatar" src="${ROOT}images/yuki-idea.png" alt="" width="40" height="40" aria-hidden="true">
         <div>
-          <p class="cb-header-title">YK AIアシスタント</p>
-          <p class="cb-header-sub">通常すぐに応答します</p>
+          <p class="cb-header-title">YUKI<span class="cb-header-role">YK AIアシスタント</span></p>
+          <p class="cb-header-sub"><span class="cb-header-dot" aria-hidden="true"></span>オンライン・すぐに応答します</p>
         </div>
         <button type="button" class="cb-close" aria-label="チャットを閉じる">✕</button>
       </div>
@@ -141,7 +141,7 @@
       if (!opened) {
         opened = true;
         setTimeout(() => addBot(
-          "こんにちは!YK ENTERPRISEのAIアシスタントです 👋<br>サービス・料金・納期など、お気軽にご質問ください。"
+          "こんにちは!YK ENTERPRISEのマスコット、AIアシスタントの<strong>YUKI(ユキ)</strong>です 👋<br>サービス・料金・納期など、お気軽にご質問ください!"
         ), 350);
       }
       input.focus();
