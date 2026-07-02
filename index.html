@@ -78,8 +78,7 @@ tailwind.config = {
 <header class="site-header fixed inset-x-0 top-0 z-50">
   <div class="mx-auto flex h-16 max-w-site items-center justify-between px-5 lg:h-20 lg:px-8">
     <a href="index.html" class="flex items-center gap-2 text-lg font-extrabold tracking-wider" aria-label="YK ENTERPRISE ホーム">
-      <span class="inline-block h-2.5 w-2.5 rounded-full bg-gradient-to-r from-accent to-accent-cyan" aria-hidden="true"></span>
-      YK&nbsp;ENTERPRISE
+      <img src="images/logo.png" alt="YK ENTERPRISE — REDEFINE THE FUTURE OF BUSINESS" width="538" height="120" class="h-9 w-auto lg:h-11">
     </a>
     <nav aria-label="グローバルナビゲーション" class="hidden items-center gap-8 text-sm font-medium text-sub lg:flex">
       <a href="index.html#services" class="transition hover:text-white">Service</a>
@@ -494,14 +493,19 @@ tailwind.config = {
 <section class="relative overflow-hidden py-28 lg:py-40" aria-labelledby="cta-title">
   <div class="orb orb-blue left-[10%] top-[0%] h-[24rem] w-[24rem]" aria-hidden="true"></div>
   <div class="orb orb-cyan right-[10%] bottom-[0%] h-[24rem] w-[24rem]" aria-hidden="true"></div>
-  <div class="relative mx-auto max-w-3xl px-5 text-center lg:px-8">
-    <h2 id="cta-title" class="reveal text-4xl font-black leading-tight sm:text-5xl">
-      未来のビジネスを、<br><span class="text-gradient">今ここから。</span>
-    </h2>
-    <p class="reveal reveal-delay-1 mx-auto mt-6 max-w-xl text-sm leading-8 text-sub sm:text-base">
-      Web・AI・マーケティング・美容。どんな課題も、まずはお気軽にご相談ください。最適な打ち手を無料でご提案します。
-    </p>
-    <div class="reveal reveal-delay-2 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+  <div class="relative mx-auto max-w-site px-5 text-center lg:px-8">
+    <h2 id="cta-title" class="sr-only">未来のビジネスを、今ここから。</h2>
+    <p class="sr-only">Web・AI・マーケティング・美容。どんな課題も、まずはお気軽にご相談ください。最適な打ち手を無料でご提案します。</p>
+    <figure class="reveal relative">
+      <div class="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-br from-accent-violet/30 via-accent/20 to-accent-rose/25 blur-2xl" aria-hidden="true"></div>
+      <a href="contact.html" class="group relative block overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-accent-violet/20 transition duration-500 hover:border-accent-violet/50 hover:shadow-accent-violet/40">
+        <img src="images/cta-banner.jpg"
+          alt="未来のビジネスを、今ここから。Let's Redefine! Web・AI・マーケティング・美容。どんな課題も、まずはお気軽にご相談ください。最適な打ち手を無料でご提案します。— WEB DEVELOPMENT / AI SOLUTION / MARKETING / BEAUTY BUSINESS。マスコットのYUKIがご案内します。"
+          width="1535" height="721" loading="lazy" decoding="async"
+          class="w-full transition duration-700 group-hover:scale-[1.02]">
+      </a>
+    </figure>
+    <div class="reveal reveal-delay-2 mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
       <a href="contact.html" class="btn-primary w-full sm:w-auto">無料相談はこちら</a>
       <a href="contact.html" class="btn-ghost w-full sm:w-auto">お問い合わせ</a>
     </div>
