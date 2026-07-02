@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YK ENTERPRISE|WEB3.0時代をリードする次世代ITソリューション企業 — AI × Web × Marketing × Beauty</title>
+<meta name="description" content="YK ENTERPRISEは、Web構築・AI開発・Webコンサルティング・SNSマーケティング・美容事業をワンストップで提供する次世代DXカンパニー。AI時代に最適化された戦略で、企業の成長を加速させます。">
+<meta name="keywords" content="YK ENTERPRISE,DX,AI開発,Web制作,SEO,LLMO,SNSマーケティング,美容DX">
+<link rel="canonical" href="https://yk-enterprise.co.jp/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YK ENTERPRISE">
+<meta property="og:title" content="YK ENTERPRISE|WEB3.0時代をリードする次世代ITソリューション企業">
+<meta property="og:description" content="AI × Web × Marketing × Beauty。企業の成長を加速させるWeb構築・AI開発・マーケティング・美容事業をワンストップで提供します。">
+<meta property="og:url" content="https://yk-enterprise.co.jp/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://yk-enterprise.co.jp/images/top1.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://yk-enterprise.co.jp/images/top1.png">
+<meta name="theme-color" content="#05070f">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS (本番運用時はビルド版CSSへ差し替え推奨 → DESIGN_GUIDELINES.md 参照) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: "#05070f",
+        surface: "#0b1020",
+        line: "rgba(255,255,255,0.08)",
+        accent: { DEFAULT: "#3b82f6", cyan: "#22d3ee", violet: "#8b5cf6", rose: "#fb7185", gold: "#fbbf24" },
+        sub: "#94a3b8"
+      },
+      fontFamily: { sans: ["Inter", "Noto Sans JP", "sans-serif"] },
+      maxWidth: { site: "72rem" }
+    }
+  }
+};
+</script>
+<link rel="stylesheet" href="css/style.css">
+
+<!-- 構造化データ(Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://yk-enterprise.co.jp/#org",
+      "name": "YK ENTERPRISE",
+      "url": "https://yk-enterprise.co.jp/",
+      "description": "AI × Web × Marketing × Beauty を融合した次世代DXカンパニー。Web構築、AI開発、Webコンサルティング、SNSマーケティング、美容事業をワンストップで提供。",
+      "address": { "@type": "PostalAddress", "addressCountry": "JP", "addressRegion": "東京都" },
+      "knowsAbout": ["Web制作", "AI開発", "生成AI導入", "SEO", "LLMO", "SNSマーケティング", "美容DX"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://yk-enterprise.co.jp/#website",
+      "url": "https://yk-enterprise.co.jp/",
+      "name": "YK ENTERPRISE",
+      "publisher": { "@id": "https://yk-enterprise.co.jp/#org" },
+      "inLanguage": "ja"
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="font-sans bg-ink text-slate-100">
+<a href="#main" class="skip-link">本文へスキップ</a>
+
+<!-- ============ Header ============ -->
+<header class="site-header fixed inset-x-0 top-0 z-50">
+  <div class="mx-auto flex h-16 max-w-site items-center justify-between px-5 lg:h-20 lg:px-8">
+    <a href="index.html" class="flex items-center gap-2 text-lg font-extrabold tracking-wider" aria-label="YK ENTERPRISE ホーム">
+      <span class="inline-block h-2.5 w-2.5 rounded-full bg-gradient-to-r from-accent to-accent-cyan" aria-hidden="true"></span>
+      YK&nbsp;ENTERPRISE
+    </a>
+    <nav aria-label="グローバルナビゲーション" class="hidden items-center gap-8 text-sm font-medium text-sub lg:flex">
+      <a href="index.html#services" class="transition hover:text-white">Service</a>
+      <a href="works.html" class="transition hover:text-white">Works</a>
+      <a href="company.html" class="transition hover:text-white">Company</a>
+      <a href="news.html" class="transition hover:text-white">News</a>
+      <a href="recruit.html" class="transition hover:text-white">Recruit</a>
+      <a href="contact.html" class="btn-primary !px-6 !py-2.5 text-sm">無料相談</a>
+    </nav>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="メニューを開く"
+      class="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden">
+      <span class="block h-0.5 w-6 bg-white"></span>
+      <span class="block h-0.5 w-6 bg-white"></span>
+      <span class="block h-0.5 w-6 bg-white"></span>
+    </button>
+  </div>
+  <div id="mobile-nav" class="glass-strong hidden lg:hidden">
+    <nav aria-label="モバイルナビゲーション" class="flex flex-col gap-1 px-6 py-6 text-base font-medium">
+      <a href="index.html#services" class="rounded-lg px-3 py-3 hover:bg-white/5">Service</a>
+      <a href="works.html" class="rounded-lg px-3 py-3 hover:bg-white/5">Works</a>
+      <a href="company.html" class="rounded-lg px-3 py-3 hover:bg-white/5">Company</a>
+      <a href="news.html" class="rounded-lg px-3 py-3 hover:bg-white/5">News</a>
+      <a href="recruit.html" class="rounded-lg px-3 py-3 hover:bg-white/5">Recruit</a>
+      <a href="contact.html" class="btn-primary mt-3 justify-center">無料相談はこちら</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ Hero ============ -->
+<section class="relative flex min-h-screen items-center overflow-hidden pt-24 pb-20" aria-label="メインビジュアル">
+  <div class="bg-grid absolute inset-0" aria-hidden="true"></div>
+  <div class="orb orb-blue left-[-10%] top-[-10%] h-[34rem] w-[34rem]" aria-hidden="true"></div>
+  <div class="orb orb-cyan right-[-12%] top-[30%] h-[30rem] w-[30rem]" aria-hidden="true"></div>
+  <div class="orb orb-violet bottom-[-20%] left-[30%] h-[28rem] w-[28rem]" aria-hidden="true"></div>
+
+  <div class="relative mx-auto grid w-full max-w-site items-center gap-14 px-5 text-center lg:grid-cols-[1.15fr_0.85fr] lg:gap-16 lg:px-8 lg:text-left">
+    <div>
+      <p class="hero-in hero-in-1 mb-8 inline-flex items-center gap-2 rounded-full glass px-5 py-2 text-xs font-semibold tracking-[0.25em] text-accent-cyan">
+        <span class="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-accent-cyan" aria-hidden="true"></span>
+        NEXT GENERATION DX COMPANY
+      </p>
+      <h1 class="hero-in hero-in-2 text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl">
+        WEB3.0時代をリードする<br>
+        <span class="text-gradient">次世代ITソリューション企業</span>
+      </h1>
+      <p class="hero-in hero-in-3 mt-8 text-lg font-bold tracking-[0.2em] text-slate-300 sm:text-2xl">
+        AI × Web × Marketing × Beauty
+      </p>
+      <p class="hero-in hero-in-3 mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-sub sm:text-base lg:mx-0">
+        未来を創るDXパートナー。企業の成長を加速させる<br class="hidden sm:block">
+        Web構築・AI開発・マーケティング・美容事業をワンストップで提供します。
+      </p>
+      <div class="hero-in hero-in-4 mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
+        <a href="contact.html" class="btn-primary w-full sm:w-auto">無料相談はこちら
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+        <a href="index.html#services" class="btn-ghost w-full sm:w-auto">サービスを見る</a>
+      </div>
+    </div>
+    <div class="hero-in hero-in-3 relative mx-auto w-64 sm:w-80 lg:w-full lg:max-w-[26rem]">
+      <div class="absolute -inset-8 rounded-full bg-gradient-to-br from-accent/35 via-accent-violet/25 to-accent-rose/35 blur-3xl" aria-hidden="true"></div>
+      <img src="images/top1-hero.jpg"
+        alt="YK ENTERPRISEロゴ — WEB3.0 × AI × Beauty × Marketing。テクノロジーで、美しさと未来をつなぐ。"
+        width="880" height="880" fetchpriority="high" decoding="async"
+        class="hero-logo relative w-full rounded-[2.5rem] border border-white/15 shadow-2xl shadow-accent/20">
+    </div>
+  </div>
+</section>
+
+<!-- ============ Keyword Marquee ============ -->
+<div class="marquee border-y border-line py-5" aria-hidden="true">
+  <div class="marquee-track text-sm font-bold uppercase tracking-[0.3em] text-slate-600">
+    <span>Generative&nbsp;AI</span><span>Web3.0</span><span>LLMO</span><span>SEO</span><span>RAG</span><span>DX</span><span>UI/UX</span><span>Beauty&nbsp;Tech</span><span>SNS&nbsp;Marketing</span><span>AI&nbsp;Agent</span>
+    <span>Generative&nbsp;AI</span><span>Web3.0</span><span>LLMO</span><span>SEO</span><span>RAG</span><span>DX</span><span>UI/UX</span><span>Beauty&nbsp;Tech</span><span>SNS&nbsp;Marketing</span><span>AI&nbsp;Agent</span>
+  </div>
+</div>
+
+<!-- ============ Mission ============ -->
+<section class="relative py-24 lg:py-36" aria-labelledby="mission-title">
+  <div class="mx-auto max-w-site px-5 lg:px-8">
+    <p class="section-index reveal">01 — Mission</p>
+    <h2 id="mission-title" class="sr-only">テクノロジーと美意識で、ビジネスの未来を再定義する。</h2>
+    <div class="sr-only">
+      <p>YK ENTERPRISEは、単なるホームページ制作会社ではありません。AI・Web・マーケティング・美容事業を融合し、企業のデジタル変革を一気通貫で支援する次世代DXカンパニーです。</p>
+      <p>生成AIが検索体験を塗り替えるいま、必要なのは「作って終わり」のWebではなく、AI時代に発見され、選ばれ、成果を生み続ける仕組み。私たちは戦略設計から開発・運用・グロースまでをワンストップで実装します。</p>
+    </div>
+    <figure class="reveal reveal-delay-1 relative mt-8">
+      <div class="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-br from-accent/20 via-accent-violet/15 to-accent-gold/20 blur-2xl" aria-hidden="true"></div>
+      <img src="images/mission.jpg"
+        alt="テクノロジーと美意識で、ビジネスの未来を再定義する。YK ENTERPRISEはAI・Web・マーケティング・美容事業を融合した次世代DXカンパニー。AI SOLUTION(生成AI活用・業務自動化・AI戦略設計)、WEB DEVELOPMENT(Webサイト・LP制作・システム開発)、MARKETING(デジタルマーケティング・SEO・広告運用・解析)、BEAUTY BUSINESS(美容事業の企画・開発・ブランド支援)。戦略×テクノロジー×美意識で、企業のDXを加速させるパートナーに。"
+        width="1536" height="1024" loading="lazy" decoding="async"
+        class="relative w-full rounded-2xl border border-white/10 shadow-2xl shadow-accent/15">
+    </figure>
+  </div>
+</section>
+
+<!-- ============ Services ============ -->
+<section id="services" class="relative py-24 lg:py-32" aria-labelledby="services-title">
+  <div class="orb orb-blue right-[-15%] top-[10%] h-[26rem] w-[26rem] opacity-20" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-site px-5 lg:px-8">
+    <p class="section-index reveal">02 — Service</p>
+    <h2 id="services-title" class="reveal reveal-delay-1 mt-4 text-3xl font-black sm:text-4xl">事業内容</h2>
+    <p class="reveal reveal-delay-2 mt-4 max-w-2xl text-sm leading-7 text-sub sm:text-base">戦略・開発・マーケティング・美容。5つの事業が連動し、企業成長のすべてのフェーズを支えます。</p>
+
+    <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Web構築 -->
+      <a href="services/web.html" class="glass card-hover reveal group rounded-2xl p-8">
+        <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent to-accent-cyan" aria-hidden="true">
+          <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+        </div>
+        <h3 class="text-xl font-bold">Web構築事業</h3>
+        <p class="mt-3 text-sm leading-7 text-sub">コーポレートサイト・ブランドサイト・LP・EC・予約/会員システム・CMSまで。成果から逆算した設計で「資産になるWeb」を構築します。</p>
+        <p class="mt-6 inline-flex items-center gap-1 text-sm font-bold text-accent-cyan">詳しく見る <span class="transition group-hover:translate-x-1" aria-hidden="true">→</span></p>
+      </a>
+      <!-- コンサル -->
+      <a href="services/consulting.html" class="glass card-hover reveal reveal-delay-1 group rounded-2xl p-8">
+        <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent to-accent-cyan" aria-hidden="true">
+          <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg>
+        </div>
+        <h3 class="text-xl font-bold">Webコンサルティング事業</h3>
+        <p class="mt-3 text-sm leading-7 text-sub">SEO・LLMO・MEO・CV改善・UI/UX改善・DX支援。データに基づく成果重視のコンサルティングで、Webを利益を生む装置へ変えます。</p>
+        <p class="mt-6 inline-flex items-center gap-1 text-sm font-bold text-accent-cyan">詳しく見る <span class="transition group-hover:translate-x-1" aria-hidden="true">→</span></p>
+      </a>
+      <!-- AI -->
+      <a href="services/ai.html" class="glass card-hover reveal reveal-delay-2 group rounded-2xl p-8">
+        <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent-violet to-accent" aria-hidden="true">
+          <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M2 12h4m12 0h4M7 7l2.5 2.5m5 5L17 17M17 7l-2.5 2.5m-5 5L7 17"/><circle cx="12" cy="12" r="3.5"/></svg>
+        </div>
+        <h3 class="text-xl font-bold">AI開発事業</h3>
+        <p class="mt-3 text-sm leading-7 text-sub">生成AI導入・チャットボット・RAG構築・AIエージェント・業務自動化。OpenAI / Claude / Gemini APIを駆使し、業務を再発明します。</p>
+        <p class="mt-6 inline-flex items-center gap-1 text-sm font-bold text-accent-cyan">詳しく見る <span class="transition group-hover:translate-x-1" aria-hidden="true">→</span></p>
+      </a>
+      <!-- SNS -->
+      <a href="services/sns.html" class="glass card-hover reveal group rounded-2xl p-8">
+        <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent-cyan to-accent-violet" aria-hidden="true">
+          <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold">SNSマーケティング事業</h3>
+        <p class="mt-3 text-sm leading-7 text-sub">Instagram・TikTok・YouTube・LINE公式・広告運用・インフルエンサー施策。数字で語れるSNSグロースを設計・運用します。</p>
+        <p class="mt-6 inline-flex items-center gap-1 text-sm font-bold text-accent-cyan">詳しく見る <span class="transition group-hover:translate-x-1" aria-hidden="true">→</span></p>
+      </a>
+      <!-- Beauty -->
+      <a href="services/beauty.html" class="glass card-hover reveal reveal-delay-1 group rounded-2xl p-8">
+        <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent-rose to-accent-gold" aria-hidden="true">
+          <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c1.5 3.5 4 6 7 7-3 1-5.5 3.5-7 7-1.5-3.5-4-6-7-7 3-1 5.5-3.5 7-7Z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold">美容事業<span class="ml-2 align-middle text-[10px] font-bold tracking-widest text-accent-rose">BEAUTY&nbsp;DX</span></h3>
+        <p class="mt-3 text-sm leading-7 text-sub">IT企業だから実現できる美容DX。サロン運営・ブランドプロデュース・AI美容診断・美容マーケティングを高い美意識で展開します。</p>
+        <p class="mt-6 inline-flex items-center gap-1 text-sm font-bold text-gradient-beauty">詳しく見る <span class="transition group-hover:translate-x-1" aria-hidden="true">→</span></p>
+      </a>
+      <!-- One-stop 補足カード -->
+      <div class="reveal reveal-delay-2 flex flex-col justify-center rounded-2xl border border-dashed border-white/15 p-8 text-center">
+        <p class="text-2xl font-black leading-snug"><span class="text-gradient">5つの事業を</span><br>ワンストップで。</p>
+        <p class="mt-4 text-sm leading-7 text-sub">戦略から実装・運用まで窓口ひとつ。事業間のシナジーが成果を最大化します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Strengths ============ -->
+<section class="relative py-24 lg:py-32" aria-labelledby="strengths-title">
+  <div class="mx-auto max-w-site px-5 lg:px-8">
+    <p class="section-index reveal">03 — Strengths</p>
+    <h2 id="strengths-title" class="reveal reveal-delay-1 mt-4 text-3xl font-black sm:text-4xl">選ばれる理由</h2>
+    <div class="mt-14 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+      <div class="glass card-hover reveal rounded-2xl p-6">
+        <span class="text-2xl" aria-hidden="true">🧠</span>
+        <h3 class="mt-3 font-bold">AI時代に最適化</h3>
+        <p class="mt-2 text-xs leading-6 text-sub">生成AI検索(LLMO)を前提とした情報設計・コンテンツ戦略。</p>
+      </div>
+      <div class="glass card-hover reveal reveal-delay-1 rounded-2xl p-6">
+        <span class="text-2xl" aria-hidden="true">⚡</span>
+        <h3 class="mt-3 font-bold">最新Web技術</h3>
+        <p class="mt-2 text-xs leading-6 text-sub">モダンフレームワークとCore Web Vitals基準の高速実装。</p>
+      </div>
+      <div class="glass card-hover reveal reveal-delay-2 rounded-2xl p-6">
+        <span class="text-2xl" aria-hidden="true">🚀</span>
+        <h3 class="mt-3 font-bold">高速開発</h3>
+        <p class="mt-2 text-xs leading-6 text-sub">AI駆動の開発プロセスで、従来比の速度とコスト効率を実現。</p>
+      </div>
+      <div class="glass card-hover reveal reveal-delay-3 rounded-2xl p-6">
+        <span class="text-2xl" aria-hidden="true">📈</span>
+        <h3 class="mt-3 font-bold">マーケティング支援</h3>
+        <p class="mt-2 text-xs leading-6 text-sub">作って終わりにしない。集客・CV改善まで伴走します。</p>
+      </div>
+      <div class="glass card-hover reveal rounded-2xl p-6">
+        <span class="text-2xl" aria-hidden="true">🎯</span>
+        <h3 class="mt-3 font-bold">ワンストップ対応</h3>
+        <p class="mt-2 text-xs leading-6 text-sub">戦略・制作・開発・運用・広告まで窓口はひとつ。</p>
+      </div>
+      <div class="glass card-hover reveal reveal-delay-1 rounded-2xl p-6">
+        <span class="text-2xl" aria-hidden="true">🛠️</span>
+        <h3 class="mt-3 font-bold">運用サポート</h3>
+        <p class="mt-2 text-xs leading-6 text-sub">公開後の改善・保守・グロースまで長期伴走。</p>
+      </div>
+      <div class="glass card-hover reveal reveal-delay-2 rounded-2xl p-6">
+        <span class="text-2xl" aria-hidden="true">🔍</span>
+        <h3 class="mt-3 font-bold">SEO・LLMO対応</h3>
+        <p class="mt-2 text-xs leading-6 text-sub">検索エンジンと生成AIの両方に発見される構造を標準実装。</p>
+      </div>
+      <div class="glass card-hover reveal reveal-delay-3 rounded-2xl p-6">
+        <span class="text-2xl" aria-hidden="true">🌏</span>
+        <h3 class="mt-3 font-bold">グローバル展開</h3>
+        <p class="mt-2 text-xs leading-6 text-sub">多言語・海外市場を見据えた情報設計とブランド構築。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Works ============ -->
+<section class="relative py-24 lg:py-32" aria-labelledby="works-title">
+  <div class="orb orb-violet left-[-15%] top-[20%] h-[26rem] w-[26rem] opacity-20" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-site px-5 lg:px-8">
+    <p class="section-index reveal">04 — Works</p>
+    <h2 id="works-title" class="reveal reveal-delay-1 mt-4 text-3xl font-black sm:text-4xl">実績</h2>
+
+    <dl class="reveal reveal-delay-2 mt-12 grid grid-cols-2 gap-6 rounded-2xl glass p-8 text-center md:grid-cols-4">
+      <div>
+        <dt class="text-xs font-semibold tracking-widest text-sub">プロジェクト実績</dt>
+        <dd class="mt-2 text-4xl font-black"><span class="stat-number text-gradient" data-count="300">0</span><span class="text-xl">+</span></dd>
+      </div>
+      <div>
+        <dt class="text-xs font-semibold tracking-widest text-sub">継続率</dt>
+        <dd class="mt-2 text-4xl font-black"><span class="stat-number text-gradient" data-count="97.2">0</span><span class="text-xl">%</span></dd>
+      </div>
+      <div>
+        <dt class="text-xs font-semibold tracking-widest text-sub">AI導入支援</dt>
+        <dd class="mt-2 text-4xl font-black"><span class="stat-number text-gradient" data-count="80">0</span><span class="text-xl">社+</span></dd>
+      </div>
+      <div>
+        <dt class="text-xs font-semibold tracking-widest text-sub">SNS総リーチ</dt>
+        <dd class="mt-2 text-4xl font-black"><span class="stat-number text-gradient" data-count="5000">0</span><span class="text-xl">万+</span></dd>
+      </div>
+    </dl>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <article class="glass card-hover reveal rounded-2xl p-7">
+        <p class="text-[10px] font-bold tracking-[0.25em] text-accent-cyan">WEB制作</p>
+        <h3 class="mt-3 font-bold leading-snug">製造業コーポレートサイト刷新</h3>
+        <p class="mt-3 text-sm leading-7 text-sub">リニューアル後6ヶ月で問い合わせ数<strong class="text-white">3.2倍</strong>。採用応募も1.8倍に増加。</p>
+      </article>
+      <article class="glass card-hover reveal reveal-delay-1 rounded-2xl p-7">
+        <p class="text-[10px] font-bold tracking-[0.25em] text-accent-violet">AI導入</p>
+        <h3 class="mt-3 font-bold leading-snug">社内問い合わせAIチャットボット構築</h3>
+        <p class="mt-3 text-sm leading-7 text-sub">RAG構築によりバックオフィス対応工数を<strong class="text-white">月120時間削減</strong>。</p>
+      </article>
+      <article class="glass card-hover reveal reveal-delay-2 rounded-2xl p-7">
+        <p class="text-[10px] font-bold tracking-[0.25em] text-accent-cyan">SNS運用</p>
+        <h3 class="mt-3 font-bold leading-snug">D2CブランドのTikTokグロース</h3>
+        <p class="mt-3 text-sm leading-7 text-sub">運用開始4ヶ月でフォロワー<strong class="text-white">10万人</strong>、EC売上2.5倍を達成。</p>
+      </article>
+      <article class="glass card-hover reveal rounded-2xl p-7">
+        <p class="text-[10px] font-bold tracking-[0.25em] text-accent">マーケティング</p>
+        <h3 class="mt-3 font-bold leading-snug">士業サイトのSEO・LLMO改善</h3>
+        <p class="mt-3 text-sm leading-7 text-sub">主要キーワード<strong class="text-white">1位獲得</strong>、AI検索経由の流入が全体の21%に。</p>
+      </article>
+      <article class="glass card-hover reveal reveal-delay-1 rounded-2xl p-7">
+        <p class="text-[10px] font-bold tracking-[0.25em] text-accent-rose">美容事業</p>
+        <h3 class="mt-3 font-bold leading-snug">美容サロンのDX・予約最適化</h3>
+        <p class="mt-3 text-sm leading-7 text-sub">AI予約導線とLINE連携で新規予約<strong class="text-white">2.4倍</strong>、リピート率68%に改善。</p>
+      </article>
+      <a href="works.html" class="reveal reveal-delay-2 flex items-center justify-center rounded-2xl border border-dashed border-white/15 p-7 text-sm font-bold text-accent-cyan transition hover:border-accent-cyan/50 hover:bg-white/5">
+        実績一覧を見る →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Flow ============ -->
+<section class="relative py-24 lg:py-32" aria-labelledby="flow-title">
+  <div class="mx-auto max-w-4xl px-5 lg:px-8">
+    <p class="section-index reveal">05 — Flow</p>
+    <h2 id="flow-title" class="reveal reveal-delay-1 mt-4 text-3xl font-black sm:text-4xl">制作フロー</h2>
+    <p class="reveal reveal-delay-2 mt-4 text-sm leading-7 text-sub sm:text-base">ご相談から公開後の運用改善まで、専任チームが一気通貫で伴走します。</p>
+
+    <ol class="timeline mt-16 space-y-10">
+      <li class="reveal relative flex gap-6 md:grid md:grid-cols-2 md:gap-12">
+        <span class="timeline-dot mt-1 h-10 w-10 shrink-0 rounded-full bg-gradient-to-br from-accent to-accent-cyan text-center text-sm font-black leading-10 md:absolute md:left-1/2 md:-translate-x-1/2">01</span>
+        <div class="md:col-start-1 md:pr-16 md:text-right">
+          <h3 class="text-lg font-bold">相談</h3>
+          <p class="mt-2 text-sm leading-7 text-sub">課題・目標・予算をヒアリング。無料相談で最適な打ち手をご提案します。</p>
+        </div>
+      </li>
+      <li class="reveal relative flex gap-6 md:grid md:grid-cols-2 md:gap-12">
+        <span class="timeline-dot mt-1 h-10 w-10 shrink-0 rounded-full bg-gradient-to-br from-accent to-accent-cyan text-center text-sm font-black leading-10 md:absolute md:left-1/2 md:-translate-x-1/2"></span>
+        <div class="md:col-start-2 md:pl-16">
+          <h3 class="text-lg font-bold"><span class="mr-2 text-sm text-accent-cyan">02</span>企画</h3>
+          <p class="mt-2 text-sm leading-7 text-sub">市場・競合・データを分析し、成果から逆算した戦略とKPIを設計します。</p>
+        </div>
+      </li>
+      <li class="reveal relative flex gap-6 md:grid md:grid-cols-2 md:gap-12">
+        <span class="timeline-dot mt-1 h-10 w-10 shrink-0 rounded-full bg-gradient-to-br from-accent to-accent-cyan text-center text-sm font-black leading-10 md:absolute md:left-1/2 md:-translate-x-1/2"></span>
+        <div class="md:col-start-1 md:pr-16 md:text-right">
+          <h3 class="text-lg font-bold"><span class="mr-2 text-sm text-accent-cyan">03</span>設計</h3>
+          <p class="mt-2 text-sm leading-7 text-sub">情報設計・SEO/LLMO設計・システム要件を定義。多言語展開も見据えます。</p>
+        </div>
+      </li>
+      <li class="reveal relative flex gap-6 md:grid md:grid-cols-2 md:gap-12">
+        <span class="timeline-dot mt-1 h-10 w-10 shrink-0 rounded-full bg-gradient-to-br from-accent to-accent-cyan text-center text-sm font-black leading-10 md:absolute md:left-1/2 md:-translate-x-1/2"></span>
+        <div class="md:col-start-2 md:pl-16">
+          <h3 class="text-lg font-bold"><span class="mr-2 text-sm text-accent-cyan">04</span>デザイン</h3>
+          <p class="mt-2 text-sm leading-7 text-sub">ブランド価値を最大化する、世界水準のUI/UXデザインを制作します。</p>
+        </div>
+      </li>
+      <li class="reveal relative flex gap-6 md:grid md:grid-cols-2 md:gap-12">
+        <span class="timeline-dot mt-1 h-10 w-10 shrink-0 rounded-full bg-gradient-to-br from-accent to-accent-cyan text-center text-sm font-black leading-10 md:absolute md:left-1/2 md:-translate-x-1/2"></span>
+        <div class="md:col-start-1 md:pr-16 md:text-right">
+          <h3 class="text-lg font-bold"><span class="mr-2 text-sm text-accent-cyan">05</span>開発</h3>
+          <p class="mt-2 text-sm leading-7 text-sub">最新技術による高速・高品質な実装。アクセシビリティにも配慮します。</p>
+        </div>
+      </li>
+      <li class="reveal relative flex gap-6 md:grid md:grid-cols-2 md:gap-12">
+        <span class="timeline-dot mt-1 h-10 w-10 shrink-0 rounded-full bg-gradient-to-br from-accent to-accent-cyan text-center text-sm font-black leading-10 md:absolute md:left-1/2 md:-translate-x-1/2"></span>
+        <div class="md:col-start-2 md:pl-16">
+          <h3 class="text-lg font-bold"><span class="mr-2 text-sm text-accent-cyan">06</span>公開</h3>
+          <p class="mt-2 text-sm leading-7 text-sub">品質チェック・計測設定を完了し、万全の状態でローンチします。</p>
+        </div>
+      </li>
+      <li class="reveal relative flex gap-6 md:grid md:grid-cols-2 md:gap-12">
+        <span class="timeline-dot mt-1 h-10 w-10 shrink-0 rounded-full bg-gradient-to-br from-accent-cyan to-accent-violet text-center text-sm font-black leading-10 md:absolute md:left-1/2 md:-translate-x-1/2"></span>
+        <div class="md:col-start-1 md:pr-16 md:text-right">
+          <h3 class="text-lg font-bold"><span class="mr-2 text-sm text-accent-cyan">07</span>運用改善</h3>
+          <p class="mt-2 text-sm leading-7 text-sub">データを見ながら継続改善。成果が出るまで、出た後も伴走します。</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ News ============ -->
+<section class="relative py-24 lg:py-32" aria-labelledby="news-title">
+  <div class="mx-auto max-w-site px-5 lg:px-8">
+    <div class="flex items-end justify-between">
+      <div>
+        <p class="section-index reveal">06 — News</p>
+        <h2 id="news-title" class="reveal reveal-delay-1 mt-4 text-3xl font-black sm:text-4xl">ニュース</h2>
+      </div>
+      <a href="news.html" class="reveal hidden text-sm font-bold text-accent-cyan transition hover:text-white sm:block">一覧を見る →</a>
+    </div>
+    <ul class="mt-12 divide-y divide-line">
+      <li class="reveal">
+        <a href="news.html" class="group flex flex-col gap-2 py-6 transition hover:bg-white/[0.03] sm:flex-row sm:items-center sm:gap-8 sm:px-4">
+          <time datetime="2026-06-15" class="shrink-0 text-sm text-sub">2026.06.15</time>
+          <span class="shrink-0 rounded-full border border-accent/40 px-3 py-0.5 text-[10px] font-bold tracking-widest text-accent-cyan">PRESS</span>
+          <span class="font-medium transition group-hover:text-accent-cyan">生成AI活用の美容カウンセリング支援サービス「AI Beauty Concierge」を提供開始</span>
+        </a>
+      </li>
+      <li class="reveal reveal-delay-1">
+        <a href="news.html" class="group flex flex-col gap-2 py-6 transition hover:bg-white/[0.03] sm:flex-row sm:items-center sm:gap-8 sm:px-4">
+          <time datetime="2026-05-20" class="shrink-0 text-sm text-sub">2026.05.20</time>
+          <span class="shrink-0 rounded-full border border-white/20 px-3 py-0.5 text-[10px] font-bold tracking-widest text-sub">NEWS</span>
+          <span class="font-medium transition group-hover:text-accent-cyan">LLMO(生成AI検索最適化)コンサルティングプランを正式リリース</span>
+        </a>
+      </li>
+      <li class="reveal reveal-delay-2">
+        <a href="news.html" class="group flex flex-col gap-2 py-6 transition hover:bg-white/[0.03] sm:flex-row sm:items-center sm:gap-8 sm:px-4">
+          <time datetime="2026-04-01" class="shrink-0 text-sm text-sub">2026.04.01</time>
+          <span class="shrink-0 rounded-full border border-white/20 px-3 py-0.5 text-[10px] font-bold tracking-widest text-sub">NEWS</span>
+          <span class="font-medium transition group-hover:text-accent-cyan">コーポレートサイトを全面リニューアルしました</span>
+        </a>
+      </li>
+    </ul>
+    <a href="news.html" class="reveal mt-8 block text-center text-sm font-bold text-accent-cyan sm:hidden">一覧を見る →</a>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="relative overflow-hidden py-28 lg:py-40" aria-labelledby="cta-title">
+  <div class="orb orb-blue left-[10%] top-[0%] h-[24rem] w-[24rem]" aria-hidden="true"></div>
+  <div class="orb orb-cyan right-[10%] bottom-[0%] h-[24rem] w-[24rem]" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-3xl px-5 text-center lg:px-8">
+    <h2 id="cta-title" class="reveal text-4xl font-black leading-tight sm:text-5xl">
+      未来のビジネスを、<br><span class="text-gradient">今ここから。</span>
+    </h2>
+    <p class="reveal reveal-delay-1 mx-auto mt-6 max-w-xl text-sm leading-8 text-sub sm:text-base">
+      Web・AI・マーケティング・美容。どんな課題も、まずはお気軽にご相談ください。最適な打ち手を無料でご提案します。
+    </p>
+    <div class="reveal reveal-delay-2 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <a href="contact.html" class="btn-primary w-full sm:w-auto">無料相談はこちら</a>
+      <a href="contact.html" class="btn-ghost w-full sm:w-auto">お問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="border-t border-line" role="contentinfo">
+  <div class="mx-auto max-w-site px-5 py-16 lg:px-8">
+    <div class="grid gap-12 lg:grid-cols-[1.2fr_2fr]">
+      <div>
+        <p class="flex items-center gap-2 text-lg font-extrabold tracking-wider">
+          <span class="inline-block h-2.5 w-2.5 rounded-full bg-gradient-to-r from-accent to-accent-cyan" aria-hidden="true"></span>
+          YK&nbsp;ENTERPRISE
+        </p>
+        <p class="mt-4 max-w-xs text-xs leading-6 text-sub">WEB3.0時代をリードする次世代ITソリューション企業。AI × Web × Marketing × Beauty で企業の成長を加速させます。</p>
+        <div class="mt-6 flex gap-3" aria-label="SNSリンク">
+          <a href="#" aria-label="X (Twitter)" class="glass flex h-10 w-10 items-center justify-center rounded-full transition hover:border-accent-cyan/50 hover:text-accent-cyan">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 1.15h3.68l-8.04 9.2L24 22.85h-7.41l-5.8-7.59-6.64 7.59H.47l8.6-9.83L0 1.15h7.59l5.24 6.94 6.07-6.94Zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.4Z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="glass flex h-10 w-10 items-center justify-center rounded-full transition hover:border-accent-cyan/50 hover:text-accent-cyan">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="glass flex h-10 w-10 items-center justify-center rounded-full transition hover:border-accent-cyan/50 hover:text-accent-cyan">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg>
+          </a>
+          <a href="#" aria-label="LINE公式アカウント" class="glass flex h-10 w-10 items-center justify-center rounded-full transition hover:border-accent-cyan/50 hover:text-accent-cyan">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.31 22 11.79 22 10.13 22 5.64 17.52 2 12 2Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav aria-label="フッターナビゲーション" class="grid grid-cols-2 gap-8 text-sm sm:grid-cols-3">
+        <div>
+          <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-sub">Service</p>
+          <ul class="space-y-3">
+            <li><a href="services/web.html" class="text-slate-300 transition hover:text-accent-cyan">Web構築</a></li>
+            <li><a href="services/consulting.html" class="text-slate-300 transition hover:text-accent-cyan">Webコンサルティング</a></li>
+            <li><a href="services/ai.html" class="text-slate-300 transition hover:text-accent-cyan">AI開発</a></li>
+            <li><a href="services/sns.html" class="text-slate-300 transition hover:text-accent-cyan">SNSマーケティング</a></li>
+            <li><a href="services/beauty.html" class="text-slate-300 transition hover:text-accent-cyan">美容事業</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-sub">Company</p>
+          <ul class="space-y-3">
+            <li><a href="company.html" class="text-slate-300 transition hover:text-accent-cyan">会社概要</a></li>
+            <li><a href="works.html" class="text-slate-300 transition hover:text-accent-cyan">実績</a></li>
+            <li><a href="news.html" class="text-slate-300 transition hover:text-accent-cyan">ニュース</a></li>
+            <li><a href="recruit.html" class="text-slate-300 transition hover:text-accent-cyan">採用情報</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-sub">Support</p>
+          <ul class="space-y-3">
+            <li><a href="contact.html" class="text-slate-300 transition hover:text-accent-cyan">お問い合わせ</a></li>
+            <li><a href="contact.html" class="text-slate-300 transition hover:text-accent-cyan">無料相談</a></li>
+            <li><a href="privacy.html" class="text-slate-300 transition hover:text-accent-cyan">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <p class="mt-14 border-t border-line pt-8 text-center text-xs text-slate-600">
+      © <span id="year">2026</span> YK ENTERPRISE Inc. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

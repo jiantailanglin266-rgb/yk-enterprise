@@ -1,0 +1,287 @@
+/* ============================================================
+   YK ENTERPRISE — Design System Custom Layer
+   Tailwind CDN の上に載せるカスタムスタイル。
+   命名は BEM ではなく用途ベースのユーティリティ/コンポーネント。
+   ============================================================ */
+
+:root {
+  --c-ink: #05070f;          /* ベース背景(ほぼ黒のネイビー) */
+  --c-surface: #0b1020;      /* カード・セクション背景 */
+  --c-line: rgba(255, 255, 255, 0.08);
+  --c-text: #f8fafc;
+  --c-text-sub: #94a3b8;
+  --c-blue: #3b82f6;
+  --c-cyan: #22d3ee;
+  --c-violet: #8b5cf6;
+  --c-rose: #fb7185;         /* Beauty アクセント */
+  --c-gold: #fbbf24;         /* Beauty アクセント */
+  --grad-main: linear-gradient(120deg, #3b82f6 0%, #22d3ee 55%, #8b5cf6 100%);
+  --grad-beauty: linear-gradient(120deg, #fb7185 0%, #f0abfc 50%, #fbbf24 100%);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: var(--c-ink);
+  color: var(--c-text);
+  font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection { background: rgba(59, 130, 246, 0.4); color: #fff; }
+
+/* ---- グラデーションテキスト ---- */
+.text-gradient {
+  background: var(--grad-main);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-gradient-beauty {
+  background: var(--grad-beauty);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---- ガラスモーフィズム ---- */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--c-line);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.glass-strong {
+  background: rgba(11, 16, 32, 0.75);
+  border: 1px solid var(--c-line);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ---- カードホバー(マイクロインタラクション) ---- */
+.card-hover {
+  transition: transform 0.5s var(--ease-out), border-color 0.5s var(--ease-out),
+    box-shadow 0.5s var(--ease-out), background-color 0.5s var(--ease-out);
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  border-color: rgba(59, 130, 246, 0.45);
+  box-shadow: 0 20px 60px -20px rgba(59, 130, 246, 0.35);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* ---- ボタン ---- */
+.btn-primary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2.2rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--grad-main);
+  background-size: 180% 180%;
+  transition: background-position 0.6s var(--ease-out), transform 0.3s var(--ease-out),
+    box-shadow 0.4s var(--ease-out);
+  box-shadow: 0 8px 30px -10px rgba(59, 130, 246, 0.6);
+}
+.btn-primary:hover {
+  background-position: 100% 50%;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px -10px rgba(34, 211, 238, 0.55);
+}
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2.2rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  color: var(--c-text);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: border-color 0.3s, background-color 0.3s, transform 0.3s var(--ease-out);
+}
+.btn-ghost:hover {
+  border-color: var(--c-cyan);
+  background-color: rgba(34, 211, 238, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ---- 背景オーブ(浮遊グラデーション) ---- */
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.35;
+  pointer-events: none;
+  will-change: transform;
+  animation: orb-float 14s ease-in-out infinite alternate;
+}
+.orb-blue { background: radial-gradient(circle, #2563eb 0%, transparent 70%); }
+.orb-cyan { background: radial-gradient(circle, #06b6d4 0%, transparent 70%); animation-delay: -4s; }
+.orb-violet { background: radial-gradient(circle, #7c3aed 0%, transparent 70%); animation-delay: -8s; }
+.orb-rose { background: radial-gradient(circle, #fb7185 0%, transparent 70%); animation-delay: -6s; }
+@keyframes orb-float {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(40px, -30px, 0) scale(1.08); }
+  100% { transform: translate3d(-30px, 30px, 0) scale(0.95); }
+}
+
+/* ---- ヒーローのグリッド背景 ---- */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000 40%, transparent 100%);
+}
+
+/* ---- スクロールリビール ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ---- ヒーロー登場アニメーション ---- */
+.hero-in {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: hero-in 1s var(--ease-out) forwards;
+}
+.hero-in-1 { animation-delay: 0.1s; }
+.hero-in-2 { animation-delay: 0.3s; }
+.hero-in-3 { animation-delay: 0.5s; }
+.hero-in-4 { animation-delay: 0.7s; }
+@keyframes hero-in { to { opacity: 1; transform: none; } }
+
+/* ---- キーワードマーキー ---- */
+.marquee { overflow: hidden; }
+.marquee-track {
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* ---- ヘッダー(スクロールで背景付与) ---- */
+.site-header {
+  transition: background-color 0.4s, border-color 0.4s, backdrop-filter 0.4s;
+  border-bottom: 1px solid transparent;
+}
+.site-header.is-scrolled {
+  background: rgba(5, 7, 15, 0.78);
+  border-bottom-color: var(--c-line);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* ---- タイムライン(制作フロー) ---- */
+.timeline { position: relative; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 1.25rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: linear-gradient(180deg, #3b82f6, #22d3ee, #8b5cf6);
+  opacity: 0.5;
+}
+@media (min-width: 768px) {
+  .timeline::before { left: 50%; transform: translateX(-50%); }
+}
+.timeline-dot {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.15), 0 0 24px rgba(34, 211, 238, 0.5);
+}
+
+/* ---- セクション番号 ---- */
+.section-index {
+  font-family: Inter, sans-serif;
+  letter-spacing: 0.35em;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--c-cyan);
+}
+
+/* ---- フォーム ---- */
+.form-input {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid var(--c-line);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.85rem 1.1rem;
+  color: var(--c-text);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.form-input::placeholder { color: #64748b; }
+.form-input:focus {
+  outline: none;
+  border-color: var(--c-blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+/* ---- フォーカスリング(アクセシビリティ) ---- */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--c-cyan);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---- スキップリンク ---- */
+.skip-link {
+  position: fixed;
+  top: -100%;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  background: var(--c-blue);
+  color: #fff;
+  font-weight: 700;
+  transition: top 0.3s;
+}
+.skip-link:focus { top: 1rem; }
+
+/* ---- ヒーローロゴ(浮遊+ホバー) ---- */
+.hero-logo {
+  animation: logo-float 7s ease-in-out infinite alternate;
+  transition: transform 0.5s var(--ease-out), box-shadow 0.5s var(--ease-out);
+  will-change: transform;
+}
+.hero-logo:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 30px 80px -20px rgba(139, 92, 246, 0.45);
+}
+@keyframes logo-float {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-14px); }
+}
+
+/* ---- 数値カウンター ---- */
+.stat-number {
+  font-family: Inter, sans-serif;
+  font-variant-numeric: tabular-nums;
+}

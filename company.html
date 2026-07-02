@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会社概要|YK ENTERPRISE</title>
+<meta name="description" content="YK ENTERPRISE(株式会社YKエンタープライズ)の会社概要。ミッション・ビジョン・バリュー、代表メッセージ、会社情報、沿革をご紹介。テクノロジーと美意識で、ビジネスの未来を再定義する次世代DXカンパニーです。">
+<meta name="keywords" content="YK ENTERPRISE,会社概要,企業情報,ミッション,ビジョン,代表メッセージ,沿革">
+<link rel="canonical" href="https://yk-enterprise.co.jp/company.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YK ENTERPRISE">
+<meta property="og:title" content="会社概要|YK ENTERPRISE">
+<meta property="og:description" content="テクノロジーと美意識で、ビジネスの未来を再定義する。YK ENTERPRISEのミッション・ビジョン・バリュー、代表メッセージ、会社情報、沿革をご紹介します。">
+<meta property="og:url" content="https://yk-enterprise.co.jp/company.html">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#05070f">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS (本番運用時はビルド版CSSへ差し替え推奨 → DESIGN_GUIDELINES.md 参照) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: "#05070f",
+        surface: "#0b1020",
+        line: "rgba(255,255,255,0.08)",
+        accent: { DEFAULT: "#3b82f6", cyan: "#22d3ee", violet: "#8b5cf6", rose: "#fb7185", gold: "#fbbf24" },
+        sub: "#94a3b8"
+      },
+      fontFamily: { sans: ["Inter", "Noto Sans JP", "sans-serif"] },
+      maxWidth: { site: "72rem" }
+    }
+  }
+};
+</script>
+<link rel="stylesheet" href="css/style.css">
+
+<!-- 構造化データ(Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://yk-enterprise.co.jp/#org",
+      "name": "YK ENTERPRISE",
+      "legalName": "株式会社YKエンタープライズ",
+      "url": "https://yk-enterprise.co.jp/",
+      "foundingDate": "2018-04",
+      "description": "AI × Web × Marketing × Beauty を融合した次世代DXカンパニー。Web構築、AI開発、Webコンサルティング、SNSマーケティング、美容事業をワンストップで提供。",
+      "address": { "@type": "PostalAddress", "addressCountry": "JP", "addressRegion": "東京都", "addressLocality": "渋谷区" },
+      "knowsAbout": ["Web制作", "AI開発", "生成AI導入", "SEO", "LLMO", "SNSマーケティング", "美容DX"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://yk-enterprise.co.jp/" },
+        { "@type": "ListItem", "position": 2, "name": "会社概要", "item": "https://yk-enterprise.co.jp/company.html" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="font-sans bg-ink text-slate-100">
+<a href="#main" class="skip-link">本文へスキップ</a>
+
+<!-- ============ Header ============ -->
+<header class="site-header fixed inset-x-0 top-0 z-50">
+  <div class="mx-auto flex h-16 max-w-site items-center justify-between px-5 lg:h-20 lg:px-8">
+    <a href="index.html" class="flex items-center gap-2 text-lg font-extrabold tracking-wider" aria-label="YK ENTERPRISE ホーム">
+      <span class="inline-block h-2.5 w-2.5 rounded-full bg-gradient-to-r from-accent to-accent-cyan" aria-hidden="true"></span>
+      YK&nbsp;ENTERPRISE
+    </a>
+    <nav aria-label="グローバルナビゲーション" class="hidden items-center gap-8 text-sm font-medium text-sub lg:flex">
+      <a href="index.html#services" class="transition hover:text-white">Service</a>
+      <a href="works.html" class="transition hover:text-white">Works</a>
+      <a href="company.html" aria-current="page" class="text-white transition hover:text-white">Company</a>
+      <a href="news.html" class="transition hover:text-white">News</a>
+      <a href="recruit.html" class="transition hover:text-white">Recruit</a>
+      <a href="contact.html" class="btn-primary !px-6 !py-2.5 text-sm">無料相談</a>
+    </nav>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="メニューを開く"
+      class="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden">
+      <span class="block h-0.5 w-6 bg-white"></span>
+      <span class="block h-0.5 w-6 bg-white"></span>
+      <span class="block h-0.5 w-6 bg-white"></span>
+    </button>
+  </div>
+  <div id="mobile-nav" class="glass-strong hidden lg:hidden">
+    <nav aria-label="モバイルナビゲーション" class="flex flex-col gap-1 px-6 py-6 text-base font-medium">
+      <a href="index.html#services" class="rounded-lg px-3 py-3 hover:bg-white/5">Service</a>
+      <a href="works.html" class="rounded-lg px-3 py-3 hover:bg-white/5">Works</a>
+      <a href="company.html" aria-current="page" class="rounded-lg px-3 py-3 text-white hover:bg-white/5">Company</a>
+      <a href="news.html" class="rounded-lg px-3 py-3 hover:bg-white/5">News</a>
+      <a href="recruit.html" class="rounded-lg px-3 py-3 hover:bg-white/5">Recruit</a>
+      <a href="contact.html" class="btn-primary mt-3 justify-center">無料相談はこちら</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ Page Hero ============ -->
+<section class="relative overflow-hidden pt-40 pb-20" aria-labelledby="page-title">
+  <div class="bg-grid absolute inset-0" aria-hidden="true"></div>
+  <div class="orb orb-blue left-[-12%] top-[-20%] h-[30rem] w-[30rem]" aria-hidden="true"></div>
+  <div class="orb orb-cyan right-[-10%] top-[10%] h-[26rem] w-[26rem]" aria-hidden="true"></div>
+
+  <div class="relative mx-auto w-full max-w-site px-5 lg:px-8">
+    <p class="hero-in hero-in-1 section-index">Company</p>
+    <h1 id="page-title" class="hero-in hero-in-2 mt-4 text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+      会社概要
+    </h1>
+    <p class="hero-in hero-in-3 mt-6 max-w-2xl text-sm leading-8 text-sub sm:text-base">
+      テクノロジーと美意識で、ビジネスの未来を再定義する。<br class="hidden sm:block">
+      YK ENTERPRISEの理念、代表メッセージ、企業情報をご紹介します。
+    </p>
+    <!-- パンくず -->
+    <nav aria-label="パンくずリスト" class="hero-in hero-in-4 mt-10">
+      <ol class="flex flex-wrap items-center gap-2 text-xs text-sub">
+        <li><a href="index.html" class="transition hover:text-accent-cyan">ホーム</a></li>
+        <li aria-hidden="true" class="text-slate-600">/</li>
+        <li aria-current="page" class="text-slate-300">会社概要</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- ============ Mission / Vision / Value ============ -->
+<section class="relative py-24 lg:py-32" aria-labelledby="mvv-title">
+  <div class="orb orb-violet right-[-15%] top-[20%] h-[26rem] w-[26rem] opacity-20" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-site px-5 lg:px-8">
+    <p class="section-index reveal">01 — Mission / Vision / Value</p>
+    <h2 id="mvv-title" class="reveal reveal-delay-1 mt-4 text-3xl font-black sm:text-4xl">私たちの理念</h2>
+
+    <!-- Mission -->
+    <div class="reveal reveal-delay-2 mt-14 rounded-2xl glass p-8 sm:p-12">
+      <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-accent-cyan">Mission</p>
+      <p class="mt-5 text-2xl font-black leading-snug sm:text-4xl">
+        テクノロジーと美意識で、<br>
+        <span class="text-gradient">ビジネスの未来を再定義する。</span>
+      </p>
+      <p class="mt-6 max-w-3xl text-sm leading-8 text-sub sm:text-base">
+        優れた技術は、優れた美意識と出会ったとき、はじめて人を動かす力になる。私たちはAI・Web・マーケティング・美容の境界を越え、企業の可能性を最大限に引き出すことを使命としています。
+      </p>
+    </div>
+
+    <!-- Vision -->
+    <div class="reveal mt-6 rounded-2xl glass p-8 sm:p-12">
+      <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-accent-violet">Vision</p>
+      <p class="mt-5 text-xl font-black leading-snug sm:text-3xl">
+        AIと人の創造性が響き合う、<br>アジアを代表するクリエイティブDXカンパニーへ。
+      </p>
+      <p class="mt-6 max-w-3xl text-sm leading-8 text-sub sm:text-base">
+        生成AIがあらゆる産業を塗り替える時代。私たちはテクノロジーを「人の代替」ではなく「創造性の増幅装置」と捉え、日本発のクリエイティブDXを世界へ届けます。
+      </p>
+    </div>
+
+    <!-- Values -->
+    <div class="mt-6 grid gap-6 md:grid-cols-3">
+      <div class="glass card-hover reveal rounded-2xl p-8">
+        <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-accent-cyan">Value 01</p>
+        <h3 class="mt-4 text-xl font-bold">成果に、誠実であれ。</h3>
+        <p class="mt-3 text-sm leading-7 text-sub">納品はゴールではなくスタート。数字で語り、成果が出るまで伴走する。クライアントの事業成長こそが、私たちの唯一の評価軸です。</p>
+      </div>
+      <div class="glass card-hover reveal reveal-delay-1 rounded-2xl p-8">
+        <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-accent-cyan">Value 02</p>
+        <h3 class="mt-4 text-xl font-bold">最先端を、あたりまえに。</h3>
+        <p class="mt-3 text-sm leading-7 text-sub">昨日の正解を疑い、今日の最先端を実装する。AIを全社員が使いこなし、学び続ける組織であることを、私たちは自らに課しています。</p>
+      </div>
+      <div class="glass card-hover reveal reveal-delay-2 rounded-2xl p-8">
+        <p class="text-[10px] font-bold uppercase tracking-[0.35em] text-accent-cyan">Value 03</p>
+        <h3 class="mt-4 text-xl font-bold">美しさは、機能である。</h3>
+        <p class="mt-3 text-sm leading-7 text-sub">美しいものは、伝わる。使いやすいものは、選ばれる。デザインを装飾ではなく事業の武器として磨き続けます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Message ============ -->
+<section class="relative py-24 lg:py-32" aria-labelledby="message-title">
+  <div class="orb orb-cyan left-[-15%] top-[10%] h-[24rem] w-[24rem] opacity-20" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-site px-5 lg:px-8">
+    <p class="section-index reveal">02 — Message</p>
+    <h2 id="message-title" class="reveal reveal-delay-1 mt-4 text-3xl font-black sm:text-4xl">代表メッセージ</h2>
+
+    <div class="reveal reveal-delay-2 mt-14 grid gap-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
+      <div>
+        <div class="glass flex aspect-[4/5] items-center justify-center rounded-2xl" aria-hidden="true">
+          <svg class="h-24 w-24 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </div>
+        <p class="mt-6 text-xs font-semibold tracking-widest text-sub">代表取締役CEO</p>
+        <p class="mt-2 text-2xl font-black">山田 恭平</p>
+        <p class="mt-1 text-xs tracking-widest text-slate-500">Kyohei Yamada</p>
+      </div>
+      <div class="space-y-6 text-sm leading-8 text-sub sm:text-base sm:leading-9">
+        <p class="text-xl font-bold leading-relaxed text-white sm:text-2xl">
+          「変化を恐れる企業」と「変化を武器にする企業」。<br>その差が、これほど残酷に開く時代はありません。
+        </p>
+        <p>
+          生成AIの登場は、インターネットの誕生に匹敵する地殻変動です。検索のかたちが変わり、ものづくりの速度が変わり、顧客との出会い方そのものが変わりました。しかし多くの企業にとって、この変化はまだ「遠いニュース」のままです。私たちYK ENTERPRISEは、その距離をゼロにするために存在しています。戦略から実装、運用までを一気通貫で担い、<strong class="text-white">AIの力を「明日の売上」に変換する</strong>。それが私たちの仕事です。
+        </p>
+        <p>
+          同時に、私たちはテクノロジー万能主義には立ちません。どれほどAIが進化しても、最後に人の心を動かすのは、美しさであり、物語であり、細部への執念です。テクノロジーと美意識——この二つを兼ね備えたパートナーとして、お客様のビジネスの未来を共に描けることを、心から楽しみにしています。まずは一度、私たちに会いに来てください。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Company Profile ============ -->
+<section class="relative py-24 lg:py-32" aria-labelledby="profile-title">
+  <div class="mx-auto max-w-site px-5 lg:px-8">
+    <p class="section-index reveal">03 — Profile</p>
+    <h2 id="profile-title" class="reveal reveal-delay-1 mt-4 text-3xl font-black sm:text-4xl">会社情報</h2>
+
+    <div class="reveal reveal-delay-2 mt-14 overflow-hidden rounded-2xl glass">
+      <dl class="divide-y divide-line text-sm sm:text-base">
+        <div class="grid gap-2 px-6 py-6 sm:grid-cols-[12rem_1fr] sm:gap-8 sm:px-10">
+          <dt class="font-bold text-white">会社名</dt>
+          <dd class="text-sub">YK ENTERPRISE(株式会社YKエンタープライズ)</dd>
+        </div>
+        <div class="grid gap-2 px-6 py-6 sm:grid-cols-[12rem_1fr] sm:gap-8 sm:px-10">
+          <dt class="font-bold text-white">所在地</dt>
+          <dd class="text-sub">〒150-0002 東京都渋谷区渋谷◯-◯-◯ ◯◯ビル◯F</dd>
+        </div>
+        <div class="grid gap-2 px-6 py-6 sm:grid-cols-[12rem_1fr] sm:gap-8 sm:px-10">
+          <dt class="font-bold text-white">設立</dt>
+          <dd class="text-sub">2018年4月</dd>
+        </div>
+        <div class="grid gap-2 px-6 py-6 sm:grid-cols-[12rem_1fr] sm:gap-8 sm:px-10">
+          <dt class="font-bold text-white">資本金</dt>
+          <dd class="text-sub">3,000万円</dd>
+        </div>
+        <div class="grid gap-2 px-6 py-6 sm:grid-cols-[12rem_1fr] sm:gap-8 sm:px-10">
+          <dt class="font-bold text-white">代表者</dt>
+          <dd class="text-sub">代表取締役CEO 山田 恭平</dd>
+        </div>
+        <div class="grid gap-2 px-6 py-6 sm:grid-cols-[12rem_1fr] sm:gap-8 sm:px-10">
+          <dt class="font-bold text-white">従業員数</dt>
+          <dd class="text-sub">42名(業務委託パートナー含む/2026年4月現在)</dd>
+        </div>
+        <div class="grid gap-2 px-6 py-6 sm:grid-cols-[12rem_1fr] sm:gap-8 sm:px-10">
+          <dt class="font-bold text-white">事業内容</dt>
+          <dd class="text-sub">
+            <ul class="list-inside space-y-2">
+              <li class="flex gap-3"><span class="mt-2.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-accent-cyan" aria-hidden="true"></span>Web構築事業(コーポレートサイト・EC・Webシステム開発)</li>
+              <li class="flex gap-3"><span class="mt-2.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-accent-cyan" aria-hidden="true"></span>Webコンサルティング事業(SEO・LLMO・CV改善・DX支援)</li>
+              <li class="flex gap-3"><span class="mt-2.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-accent-cyan" aria-hidden="true"></span>AI開発事業(生成AI導入・RAG構築・AIエージェント開発)</li>
+              <li class="flex gap-3"><span class="mt-2.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-accent-cyan" aria-hidden="true"></span>SNSマーケティング事業(SNS運用・広告運用・インフルエンサー施策)</li>
+              <li class="flex gap-3"><span class="mt-2.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-accent-rose" aria-hidden="true"></span>美容事業(サロンプロデュース・美容DX・AI美容診断)</li>
+            </ul>
+          </dd>
+        </div>
+        <div class="grid gap-2 px-6 py-6 sm:grid-cols-[12rem_1fr] sm:gap-8 sm:px-10">
+          <dt class="font-bold text-white">取引銀行</dt>
+          <dd class="text-sub">三菱UFJ銀行 渋谷支店/みずほ銀行 渋谷中央支店/GMOあおぞらネット銀行</dd>
+        </div>
+        <div class="grid gap-2 px-6 py-6 sm:grid-cols-[12rem_1fr] sm:gap-8 sm:px-10">
+          <dt class="font-bold text-white">許認可・登録</dt>
+          <dd class="text-sub">プライバシーマーク取得準備中/インボイス登録番号 T0-0000-0000-0000(プレースホルダ)</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ History ============ -->
+<section class="relative py-24 lg:py-32" aria-labelledby="history-title">
+  <div class="orb orb-blue right-[-12%] bottom-[0%] h-[24rem] w-[24rem] opacity-20" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-4xl px-5 lg:px-8">
+    <p class="section-index reveal">04 — History</p>
+    <h2 id="history-title" class="reveal reveal-delay-1 mt-4 text-3xl font-black sm:text-4xl">沿革</h2>
+    <p class="reveal reveal-delay-2 mt-4 text-sm leading-7 text-sub sm:text-base">創業から現在まで。変化を武器に、事業領域を広げ続けてきました。</p>
+
+    <ol class="timeline mt-16 space-y-10">
+      <li class="reveal relative flex gap-6 md:grid md:grid-cols-2 md:gap-12">
+        <span class="timeline-dot mt-1 h-10 w-10 shrink-0 rounded-full bg-gradient-to-br from-accent to-accent-cyan text-center text-sm font-black leading-10 md:absolute md:left-1/2 md:-translate-x-1/2"></span>
+        <div class="md:col-start-1 md:pr-16 md:text-right">
+          <p class="text-sm font-bold text-accent-cyan">2018年4月</p>
+          <h3 class="mt-1 text-lg font-bold">創業</h3>
+          <p class="mt-2 text-sm leading-7 text-sub">東京都渋谷区にて株式会社YKエンタープライズを設立。Web制作事業からスタート。</p>
+        </div>
+      </li>
+      <li class="reveal relative flex gap-6 md:grid md:grid-cols-2 md:gap-12">
+        <span class="timeline-dot mt-1 h-10 w-10 shrink-0 rounded-full bg-gradient-to-br from-accent to-accent-cyan text-center text-sm font-black leading-10 md:absolute md:left-1/2 md:-translate-x-1/2"></span>
+        <div class="md:col-start-2 md:pl-16">
+          <p class="text-sm font-bold text-accent-cyan">2020年7月</p>
+          <h3 class="mt-1 text-lg font-bold">事業拡大</h3>
+          <p class="mt-2 text-sm leading-7 text-sub">Webコンサルティング事業・SNSマーケティング事業を開始。プロジェクト実績100件を突破。</p>
+        </div>
+      </li>
+      <li class="reveal relative flex gap-6 md:grid md:grid-cols-2 md:gap-12">
+        <span class="timeline-dot mt-1 h-10 w-10 shrink-0 rounded-full bg-gradient-to-br from-accent to-accent-cyan text-center text-sm font-black leading-10 md:absolute md:left-1/2 md:-translate-x-1/2"></span>
+        <div class="md:col-start-1 md:pr-16 md:text-right">
+          <p class="text-sm font-bold text-accent-cyan">2023年5月</p>
+          <h3 class="mt-1 text-lg font-bold">AI開発事業を開始</h3>
+          <p class="mt-2 text-sm leading-7 text-sub">生成AIの本格普及を受け、AI開発事業部を新設。生成AI導入支援・RAG構築サービスを提供開始。</p>
+        </div>
+      </li>
+      <li class="reveal relative flex gap-6 md:grid md:grid-cols-2 md:gap-12">
+        <span class="timeline-dot mt-1 h-10 w-10 shrink-0 rounded-full bg-gradient-to-br from-accent-rose to-accent-gold text-center text-sm font-black leading-10 md:absolute md:left-1/2 md:-translate-x-1/2"></span>
+        <div class="md:col-start-2 md:pl-16">
+          <p class="text-sm font-bold text-accent-rose">2024年10月</p>
+          <h3 class="mt-1 text-lg font-bold">美容事業を開始</h3>
+          <p class="mt-2 text-sm leading-7 text-sub">IT×美容の新領域「Beauty DX」に参入。サロンプロデュース・AI美容診断サービスを展開。</p>
+        </div>
+      </li>
+      <li class="reveal relative flex gap-6 md:grid md:grid-cols-2 md:gap-12">
+        <span class="timeline-dot mt-1 h-10 w-10 shrink-0 rounded-full bg-gradient-to-br from-accent-cyan to-accent-violet text-center text-sm font-black leading-10 md:absolute md:left-1/2 md:-translate-x-1/2"></span>
+        <div class="md:col-start-1 md:pr-16 md:text-right">
+          <p class="text-sm font-bold text-accent-cyan">2026年4月</p>
+          <h3 class="mt-1 text-lg font-bold">現在</h3>
+          <p class="mt-2 text-sm leading-7 text-sub">プロジェクト実績300件超、AI導入支援80社超。LLMOコンサルティングを正式リリースし、5事業体制で成長を加速中。</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="relative overflow-hidden py-28 lg:py-40" aria-labelledby="cta-title">
+  <div class="orb orb-blue left-[10%] top-[0%] h-[24rem] w-[24rem]" aria-hidden="true"></div>
+  <div class="orb orb-cyan right-[10%] bottom-[0%] h-[24rem] w-[24rem]" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-3xl px-5 text-center lg:px-8">
+    <h2 id="cta-title" class="reveal text-4xl font-black leading-tight sm:text-5xl">
+      未来のビジネスを、<br><span class="text-gradient">今ここから。</span>
+    </h2>
+    <p class="reveal reveal-delay-1 mx-auto mt-6 max-w-xl text-sm leading-8 text-sub sm:text-base">
+      Web・AI・マーケティング・美容。どんな課題も、まずはお気軽にご相談ください。最適な打ち手を無料でご提案します。
+    </p>
+    <div class="reveal reveal-delay-2 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <a href="contact.html" class="btn-primary w-full sm:w-auto">無料相談はこちら</a>
+      <a href="contact.html" class="btn-ghost w-full sm:w-auto">お問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="border-t border-line" role="contentinfo">
+  <div class="mx-auto max-w-site px-5 py-16 lg:px-8">
+    <div class="grid gap-12 lg:grid-cols-[1.2fr_2fr]">
+      <div>
+        <p class="flex items-center gap-2 text-lg font-extrabold tracking-wider">
+          <span class="inline-block h-2.5 w-2.5 rounded-full bg-gradient-to-r from-accent to-accent-cyan" aria-hidden="true"></span>
+          YK&nbsp;ENTERPRISE
+        </p>
+        <p class="mt-4 max-w-xs text-xs leading-6 text-sub">WEB3.0時代をリードする次世代ITソリューション企業。AI × Web × Marketing × Beauty で企業の成長を加速させます。</p>
+        <div class="mt-6 flex gap-3" aria-label="SNSリンク">
+          <a href="#" aria-label="X (Twitter)" class="glass flex h-10 w-10 items-center justify-center rounded-full transition hover:border-accent-cyan/50 hover:text-accent-cyan">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 1.15h3.68l-8.04 9.2L24 22.85h-7.41l-5.8-7.59-6.64 7.59H.47l8.6-9.83L0 1.15h7.59l5.24 6.94 6.07-6.94Zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.4Z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="glass flex h-10 w-10 items-center justify-center rounded-full transition hover:border-accent-cyan/50 hover:text-accent-cyan">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="glass flex h-10 w-10 items-center justify-center rounded-full transition hover:border-accent-cyan/50 hover:text-accent-cyan">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg>
+          </a>
+          <a href="#" aria-label="LINE公式アカウント" class="glass flex h-10 w-10 items-center justify-center rounded-full transition hover:border-accent-cyan/50 hover:text-accent-cyan">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55 1.09-.46 5.87-3.46 8.01-5.92C21.66 13.31 22 11.79 22 10.13 22 5.64 17.52 2 12 2Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav aria-label="フッターナビゲーション" class="grid grid-cols-2 gap-8 text-sm sm:grid-cols-3">
+        <div>
+          <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-sub">Service</p>
+          <ul class="space-y-3">
+            <li><a href="services/web.html" class="text-slate-300 transition hover:text-accent-cyan">Web構築</a></li>
+            <li><a href="services/consulting.html" class="text-slate-300 transition hover:text-accent-cyan">Webコンサルティング</a></li>
+            <li><a href="services/ai.html" class="text-slate-300 transition hover:text-accent-cyan">AI開発</a></li>
+            <li><a href="services/sns.html" class="text-slate-300 transition hover:text-accent-cyan">SNSマーケティング</a></li>
+            <li><a href="services/beauty.html" class="text-slate-300 transition hover:text-accent-cyan">美容事業</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-sub">Company</p>
+          <ul class="space-y-3">
+            <li><a href="company.html" class="text-slate-300 transition hover:text-accent-cyan">会社概要</a></li>
+            <li><a href="works.html" class="text-slate-300 transition hover:text-accent-cyan">実績</a></li>
+            <li><a href="news.html" class="text-slate-300 transition hover:text-accent-cyan">ニュース</a></li>
+            <li><a href="recruit.html" class="text-slate-300 transition hover:text-accent-cyan">採用情報</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-sub">Support</p>
+          <ul class="space-y-3">
+            <li><a href="contact.html" class="text-slate-300 transition hover:text-accent-cyan">お問い合わせ</a></li>
+            <li><a href="contact.html" class="text-slate-300 transition hover:text-accent-cyan">無料相談</a></li>
+            <li><a href="privacy.html" class="text-slate-300 transition hover:text-accent-cyan">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <p class="mt-14 border-t border-line pt-8 text-center text-xs text-slate-600">
+      © <span id="year">2026</span> YK ENTERPRISE Inc. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
