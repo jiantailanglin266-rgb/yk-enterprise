@@ -1,5 +1,5 @@
 /* ============================================================
-   YK ENTERPRISE — Shared Interactions
+   MIRAI ASSIST — Shared Interactions
    ・ヘッダーのスクロール状態
    ・モバイルナビ
    ・スクロールリビール(IntersectionObserver)

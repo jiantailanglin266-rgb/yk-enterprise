@@ -1,4 +1,4 @@
-# YK ENTERPRISE — デザインガイドライン v1.0
+# ミライアシスト — デザインガイドライン v1.0
 
 「WEB3.0時代の最先端をリードする ITソリューション × AI × 美容企業」としてのブランドを、
 サイト全体で一貫して表現するための設計指針。参考基準: Apple / OpenAI / Stripe / Linear / Notion / Vercel。
@@ -150,7 +150,7 @@ CSSカスタムプロパティ([css/style.css](css/style.css))と Tailwind confi
 
 ## 10. 多言語展開(将来対応)
 
-- URL設計: `https://yk-enterprise.co.jp/en/` のサブディレクトリ方式を想定。現構造をそのまま `en/` 配下に複製可能。
+- URL設計: `https://mirai-assist.co.jp/en/` のサブディレクトリ方式を想定。現構造をそのまま `en/` 配下に複製可能。
 - 対応手順: ① `<html lang>` 切替 ② `hreflang` 相互リンク ③ JSON-LD `inLanguage` 切替 ④ ヘッダーに言語スイッチャー追加。
 - 英語ラベル(Mission / Service / Works / Flow / News)は既に全セクションに併記済みのため、翻訳時もレイアウトが崩れない。
 - 日本語固有の詰め(palt)は `:lang(ja)` スコープに限定する。

@@ -1,5 +1,5 @@
 /* ============================================================
-   YK ENTERPRISE — AI Assistant Chatbot (client-side / rule-based)
+   ミライアシスト — AI Assistant Chatbot (client-side / rule-based)
    全ページ共通のフローティングチャットウィジェット。
    外部APIなしで動作し、サービス案内と無料相談への導線を担う。
    ============================================================ */
@@ -56,11 +56,11 @@
     },
     {
       match: /サービス|事業|できること|メニュー|何が/,
-      reply: () => `YK ENTERPRISEは5つの事業をワンストップで提供しています。<br><br>1️⃣ Web構築(サイト・EC・システム)<br>2️⃣ Webコンサルティング(SEO・LLMO・CV改善)<br>3️⃣ AI開発(生成AI・チャットボット・RAG)<br>4️⃣ SNSマーケティング(Instagram・TikTok等)<br>5️⃣ 美容事業(Beauty DX)<br><br>気になる事業名を送っていただければ、詳しくご案内します!`
+      reply: () => `ミライアシストは5つの事業をワンストップで提供しています。<br><br>1️⃣ Web構築(サイト・EC・システム)<br>2️⃣ Webコンサルティング(SEO・LLMO・CV改善)<br>3️⃣ AI開発(生成AI・チャットボット・RAG)<br>4️⃣ SNSマーケティング(Instagram・TikTok等)<br>5️⃣ 美容事業(Beauty DX)<br><br>気になる事業名を送っていただければ、詳しくご案内します!`
     },
     {
       match: /会社|概要|どこ|所在地|アクセス|代表|沿革/,
-      reply: () => `YK ENTERPRISEは、AI × Web × Marketing × Beauty を融合した次世代DXカンパニーです(東京都)。<br><a href="${ROOT}company.html" class="cb-link">会社概要を見る →</a>`
+      reply: () => `ミライアシストは、AI × Web × Marketing × Beauty を融合した次世代DXカンパニーです(東京都)。<br><a href="${ROOT}company.html" class="cb-link">会社概要を見る →</a>`
     },
     {
       match: /採用|求人|リクルート|働き|転職|入社/,
@@ -94,11 +94,11 @@
       </svg>
       <span class="cb-fab-badge" aria-hidden="true"></span>
     </button>
-    <div id="cb-panel" class="cb-panel" role="dialog" aria-label="YK AIアシスタント" hidden>
+    <div id="cb-panel" class="cb-panel" role="dialog" aria-label="ミライアシスト AIアシスタント" hidden>
       <div class="cb-header">
         <img class="cb-avatar" src="${ROOT}images/yuki-idea.png?v=2" alt="" width="40" height="40" aria-hidden="true">
         <div>
-          <p class="cb-header-title">YUKI<span class="cb-header-role">YK AIアシスタント</span></p>
+          <p class="cb-header-title">YUKI<span class="cb-header-role">ミライアシスト AIアシスタント</span></p>
           <p class="cb-header-sub"><span class="cb-header-dot" aria-hidden="true"></span>オンライン・すぐに応答します</p>
         </div>
         <button type="button" class="cb-close" aria-label="チャットを閉じる">✕</button>
@@ -141,7 +141,7 @@
       if (!opened) {
         opened = true;
         setTimeout(() => addBot(
-          "こんにちは!YK ENTERPRISEのマスコット、AIアシスタントの<strong>YUKI(ユキ)</strong>です 👋<br>サービス・料金・納期など、お気軽にご質問ください!"
+          "こんにちは!ミライアシストのマスコット、AIアシスタントの<strong>YUKI(ユキ)</strong>です 👋<br>サービス・料金・納期など、お気軽にご質問ください!"
         ), 350);
       }
       input.focus();
