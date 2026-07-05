@@ -60,7 +60,7 @@
     },
     {
       match: /会社|概要|どこ|所在地|アクセス|代表|沿革/,
-      reply: () => `ミライアシストは、AI × Web × Marketing × Beauty を融合した次世代DXカンパニーです(東京都)。<br><a href="${ROOT}company.html" class="cb-link">会社概要を見る →</a>`
+      reply: () => `ミライアシストは、AI × Web × Marketing × Beauty を融合した次世代DXカンパニーです(茨城県取手市)。<br><a href="${ROOT}company.html" class="cb-link">会社概要を見る →</a>`
     },
     {
       match: /採用|求人|リクルート|働き|転職|入社/,
